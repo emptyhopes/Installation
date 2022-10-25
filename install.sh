@@ -58,15 +58,18 @@ ClearTerminal() {
    clear
 }
 
+# Убрать
 UpdateRepositories() {
    sudo apt update --yes
 }
 
+# Убрать
 UpgradeRepositories() {
    sudo apt upgrade --yes
    sudo apt dist-upgrade --yes
 }
 
+# Убрать
 InstallRepositories() {
    sudo apt install dbus-x11 libavutil56 libswresample3 wget curl git net-tools python3 nodejs npm kali-desktop-gnome --yes
 }
