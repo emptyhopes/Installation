@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Проверка на gnome-shell --version 43
+# Проверка на пакеты curl, git
+
 ROOT_UID=0
 
 BaseURL="https://extensions.gnome.org"
@@ -54,6 +57,7 @@ Run() {
    SystemSetup
 }
 
+# Убрать
 ClearTerminal() {
    clear
 }
@@ -74,6 +78,7 @@ InstallRepositories() {
    sudo apt install dbus-x11 libavutil56 libswresample3 wget curl git net-tools python3 nodejs npm kali-desktop-gnome --yes
 }
 
+# Убрать
 RemoveRepositories() {
    sudo apt autoremove --yes
 }
@@ -234,7 +239,6 @@ SystemSetup() {
    gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed "true"
    gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity "0.30"
 
-   gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup "true"
    gsettings set org.gnome.shell.extensions.dash-to-dock intellihide "false"
 
    gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
