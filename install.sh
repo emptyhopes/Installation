@@ -58,17 +58,14 @@ InstallTelegram() {
    tar --extract --file "$temporary/telegram.tar.xz"
    sudo mv "$temporary/Telegram" "/opt"
    sudo rm --recursive --force "$temporary"
-   echo "Install theme: Success."
+   echo "Install telegram: Success."
 }
 
-temporary=$(mktemp --directory)
-curl --silent --location "https://fonts.google.com/download?family=Roboto" >"$temporary/fonts.zip"
-unzip -q "$temporary/fonts.zip" -d "$LocalDirectoryFonts"
-sudo rm --recursive --force "$temporary"
-echo "Install fonts: Success."
-
 InstallVisualStudioCode() {
-
+   temporary=$(mktemp --directory)
+   curl --silent --location "https://az764295.vo.msecnd.net/stable/d045a5eda657f4d7b676dedbfa7aab8207f8a075/code_1.72.2-1665614327_amd64.deb" >"$temporary/visualstudiocode.deb"
+   sudo apt install "$temporary/visualstudiocode.deb"
+   echo "Install visual studio code: Success."
 }
 
 InstallRepositories() {
