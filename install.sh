@@ -11,12 +11,14 @@ GnomeVersion=$(gnome-shell --version | cut --delimiter=" " --fields="3")
 extensions=("user-theme@gnome-shell-extensions.gcampax.github.com" "dash-to-dock@micxgx.gmail.com" "blur-my-shell@aunetx")
 
 LocalDirectoryExtensions="$HOME/.local/share/gnome-shell/extensions"
+LocalDirectoryBackgrounds="$HOME/.local/share/backgrounds"
 LocalDirectoryThemes="$HOME/.local/share/themes"
 LocalDirectoryCursors="$HOME/.local/share/icons"
 LocalDirectoryIcons="$HOME/.local/share/icons"
 LocalDirectoryFonts="$HOME/.local/share/fonts"
 
 RootDirectoryExtensions="/usr/share/gnome-shell/extensions"
+RootDirectoryBackgrounds="/usr/share/share/backgrounds"
 RootDirectoryThemes="/usr/share/share/themes"
 RootDirectoryCursors="/usr/share/share/icons"
 RootDirectoryIcons="/usr/share/share/icons"
@@ -97,6 +99,8 @@ RemoveDirectory() {
    # Local
    sudo rm --recursive --force "$LocalDirectoryExtensions"
    echo "Clear $LocalDirectoryExtensions: Success."
+   sudo rm --recursive --force "$LocalDirectoryBackgrounds"
+   echo "Clear $LocalDirectoryBackgrounds: Success."
    sudo rm --recursive --force "$LocalDirectoryThemes"
    echo "Clear $LocalDirectoryThemes: Success."
    sudo rm --recursive --force "$LocalDirectoryCursors"
@@ -109,6 +113,8 @@ RemoveDirectory() {
    # Root
    sudo rm --recursive --force "$RootDirectoryExtensions"
    echo "Clear $RootDirectoryExtensions: Success."
+   sudo rm --recursive --force "$RootDirectoryBackgrounds"
+   echo "Clear $RootDirectoryBackgrounds: Success."
    sudo rm --recursive --force "$RootDirectoryThemes"
    echo "Clear $RootDirectoryThemes: Success."
    sudo rm --recursive --force "$RootDirectoryCursors"
