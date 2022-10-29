@@ -1,9 +1,6 @@
 #!/bin/bash
 
 ROOT_UID=0
-BaseURL="https://extensions.gnome.org"
-GnomeVersion=$(gnome-shell --version | cut --delimiter=" " --fields="3")
-extensions=("user-theme@gnome-shell-extensions.gcampax.github.com" "dash-to-dock@micxgx.gmail.com" "blur-my-shell@aunetx")
 
 LocalDirectoryExtensions="$HOME/.local/share/gnome-shell/extensions"
 LocalDirectoryBackgrounds="$HOME/.local/share/backgrounds"
@@ -56,8 +53,9 @@ ClearTerminal() {
 
 InstallTelegram() {
    temporary=$(mktemp --directory)
-   curl --silent --location "https://telegram.org/dl/desktop/linux" >"$temporary/telegram.tar.xz"
-   tar --extract --file "$temporary/telegram.tar.xz"
+   curl --location "https://telegram.org/dl/desktop/linux" >"$temporary/telegram.tar.xz"
+   cd "$temporary"
+   tar --extract --file "telegram.tar.xz"
    sudo mv "$temporary/Telegram" "/opt"
    sudo rm --recursive --force "$temporary"
    echo "Install telegram: Success."
@@ -66,7 +64,7 @@ InstallTelegram() {
 InstallVisualStudioCode() {
    temporary=$(mktemp --directory)
    curl --silent --location "https://az764295.vo.msecnd.net/stable/d045a5eda657f4d7b676dedbfa7aab8207f8a075/code_1.72.2-1665614327_amd64.deb" >"$temporary/visualstudiocode.deb"
-   sudo apt install "$temporary/visualstudiocode.deb"
+   sudo apt install "$temporary/visualstudiocode.deb" --yes
    echo "Install visual studio code: Success."
 }
 
@@ -75,11 +73,11 @@ InstallRepositories() {
 }
 
 RemoveRepositories() {
-   sudo apt purge --auto-remove polkitd catfish cherrytree engrampa king-phisher lightdm lightdm-gtk-* mate-calc mousepad onboard parole pulseaudio pulseaudio-* qt5ct qterminal ristretto thunar tex-* zutty --yes
+   sudo apt purge --autoremove polkitd catfish cherrytree engrampa king-phisher lightdm lightdm-gtk-* mate-calc mousepad onboard parole pulseaudio pulseaudio-* qt5ct qterminal ristretto thunar tex-* zutty --yes
 }
 
 CleanRepositories() {
-   sudo apt clean
+   sudo apt clean --yes
 }
 
 UpdateRepositories() {
@@ -134,6 +132,9 @@ MakeDirectory() {
 }
 
 DownloadExtensions() {
+   BaseURL="https://extensions.gnome.org"
+   GnomeVersion=$(gnome-shell --version | cut --delimiter=" " --fields="3")
+   extensions=("user-theme@gnome-shell-extensions.gcampax.github.com" "dash-to-dock@micxgx.gmail.com" "blur-my-shell@aunetx")
    for extension in ${extensions[@]}; do
       temporary=$(mktemp --directory)
       destination="$LocalDirectoryExtensions/$extension"
