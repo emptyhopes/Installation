@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [[ "$UID" == "$ROOT_UID" ]]; then
-   echo "Error: This script must be run as user."
-   exit 1
-fi
-
 ROOT_UID=0
 BaseURL="https://extensions.gnome.org"
 GnomeVersion=$(gnome-shell --version | cut --delimiter=" " --fields="3")
@@ -23,6 +18,11 @@ RootDirectoryThemes="/usr/share/share/themes"
 RootDirectoryCursors="/usr/share/share/icons"
 RootDirectoryIcons="/usr/share/share/icons"
 RootDirectoryFonts="/usr/share/share/fonts"
+
+if [[ "$UID" == "$ROOT_UID" ]]; then
+   echo "Error: This script must be run as user."
+   exit 1
+fi
 
 Run() {
    ClearTerminal
