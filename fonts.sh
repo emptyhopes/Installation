@@ -1,5 +1,7 @@
 #! /bin/bash
 
+source "variables.sh"
+
 sudo apt-get install fonts-firacode
 
 temporary=$(mktemp --directory)
