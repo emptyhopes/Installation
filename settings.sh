@@ -21,13 +21,13 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "40"
 echo "Settings up dash to dock: Success."
 
 # Appearance
-gsettings set org.gnome.desktop.interface icon-theme "WhiteSur"
-gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Light"
-gsettings set org.gnome.shell.extensions.user-theme name "WhiteSur-Light"
-gsettings set org.gnome.desktop.interface cursor-theme "McMojave-cursors"
+gsettings set org.gnome.desktop.interface icon-theme "MacOS-Icons"
+gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Theme"
+gsettings set org.gnome.shell.extensions.user-theme name "MacOS-Theme"
+gsettings set org.gnome.desktop.interface cursor-theme "MacOS-Cursors"
 
-gsettings set org.gnome.desktop.background picture-uri "file:///usr/share/backgrounds/Monterey/Monterey-timed.xml"
-gsettings set org.gnome.desktop.screensaver picture-uri "file:///usr/share/backgrounds/Monterey/Monterey-timed.xml"
+gsettings set org.gnome.desktop.background picture-uri "file:///$HOME/.local/share/backgrounds/MacOS/MacOS.xml"
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///$HOME/.local/share/backgrounds/MacOS/MacOS.xml"
 
 gsettings set org.gnome.desktop.interface font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface document-font-name "Roboto 10"
