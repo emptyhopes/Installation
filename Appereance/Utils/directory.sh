@@ -20,5 +20,5 @@ sudo rm --recursive --force "$RootDirectoryExtensions" | echo "Clear $RootDirect
 sudo rm --recursive --force "$RootDirectoryBackgrounds" | echo "Clear $RootDirectoryBackgrounds: Success."
 cd "$RootDirectoryThemes" | ls | grep --invert-match Default | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryThemes: Success."
 sudo rm --recursive --force "$RootDirectoryCursors" | echo "Clear $RootDirectoryCursors: Success."
-sudo rm --recursive --force "$RootDirectoryIcons" | echo "Clear $RootDirectoryIcons: Success."
+cd "$RootDirectoryIcons" | ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryIcons: Success."
 sudo rm --recursive --force "$RootDirectoryFonts" | echo "Clear $RootDirectoryFonts: Success."
