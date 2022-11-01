@@ -51,8 +51,8 @@ gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Themes"
 gsettings set org.gnome.shell.extensions.user-theme name "MacOS-Themes"
 gsettings set org.gnome.desktop.interface cursor-theme "MacOS-Cursors"
 
-gsettings set org.gnome.desktop.background picture-uri "file:///home/$user/.local/share/backgrounds/MacOS-Backgrounds/MacOS.png"
-gsettings set org.gnome.desktop.screensaver picture-uri "file:///home/$user/.local/share/backgrounds/MacOS-Backgrounds/MacOS.png"
+gsettings set org.gnome.desktop.background picture-uri "file:///home/$user/.local/share/backgrounds/MacOS-Backgrounds/MacOS.xml"
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///home/$user/.local/share/backgrounds/MacOS-Backgrounds/MacOS.xml"
 
 gsettings set org.gnome.desktop.interface font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface document-font-name "Roboto 10"
