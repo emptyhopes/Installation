@@ -20,31 +20,9 @@ gsettings set org.gnome.mutter center-new-windows "true"
 
 echo "Settings up system: Success."
 
-# Dash to dock
-
-#gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts "false"
-#gsettings set org.gnome.shell.extensions.dash-to-dock show-trash "false"
-#gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed "true"
-#gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity "0.30"
-#gsettings set org.gnome.shell.extensions.dash-to-dock intellihide "false"
-#gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
-#gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "40"
-
-#echo "Settings up dash to dock: Success."
-
-# Terminal
-
-#gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-columns 120
-
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-columns 120
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-rows 30
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-transparency-percent 30
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors false
-#gsettings get org.gnome.Terminal.Legacy.Profile:/:0/ font
-
-#echo "Settings up terminal: Success."
-
 # Appearance
+
+gsettings set org.gnome.shell enabled-extensions "[\"user-theme@gnome-shell-extensions.gcampax.github.com\", \"dash-to-dock@micxgx.gmail.com\", \"blur-my-shell@aunetx\"]"
 
 gsettings set org.gnome.desktop.interface icon-theme "MacOS-Icons"
 gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Themes"
@@ -60,3 +38,27 @@ gsettings set org.gnome.desktop.interface monospace-font-name "Fira Code Medium 
 gsettings set org.gnome.desktop.wm.preferences titlebar-font "Roboto Medium 10"
 
 echo "Settings up appearance: Success."
+
+# Terminal
+
+#gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-columns 120
+
+#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-columns 120
+#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-rows 30
+#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-transparency-percent 30
+#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors false
+#gsettings get org.gnome.Terminal.Legacy.Profile:/:0/ font
+
+#echo "Settings up terminal: Success."
+
+# Dash to dock
+
+#gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts "false"
+#gsettings set org.gnome.shell.extensions.dash-to-dock show-trash "false"
+#gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed "true"
+#gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity "0.30"
+#gsettings set org.gnome.shell.extensions.dash-to-dock intellihide "false"
+#gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
+#gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "40"
+
+#echo "Settings up dash to dock: Success."
