@@ -5,7 +5,7 @@
 
 # Bug fix
 4. Need fix favourites bookmarks in firefox
-5. Enable extensions after installation their
+5. Enable extensions after installation their / gsettings get org.gnome.shell enabled-extensions /  gsettings set org.gnome.shell enabled-extensions ["d", "u", "b"]
 
 # Beatify
 6. Need rework extension.sh
