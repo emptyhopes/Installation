@@ -10,4 +10,4 @@
 # Beatify
 6. Need rework extension.sh
 
-sudo cp /home/kali/Downloads/gnome-shell-theme.gresource /usr/share/gnome-shell
+#sudo cp /home/kali/Downloads/gnome-shell-theme.gresource /usr/share/gnome-shell
