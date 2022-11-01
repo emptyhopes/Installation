@@ -22,6 +22,7 @@ echo "Settings up system: Success."
 
 # Appearance
 
+gsettings set org.gnome.shell disable-user-extensions false
 gsettings set org.gnome.shell enabled-extensions "[\"user-theme@gnome-shell-extensions.gcampax.github.com\", \"dash-to-dock@micxgx.gmail.com\", \"blur-my-shell@aunetx\"]"
 
 gsettings set org.gnome.desktop.interface icon-theme "MacOS-Icons"
