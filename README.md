@@ -1,9 +1,11 @@
-# need dash-to-dock install
-# need gdm setup
+# Future
+1. Need gdm setup
+2. Need dash-to-dock install
+3. Need terminal customize
 
-# need fix favourites bookmarks in firefox
+# Bug fix
+4. Need fix favourites bookmarks in firefox
+5. Need fix MacOS.xml
 
-# need terminal customize
-# need fix MacOS.xml
-
-# need rework extension.sh
+# Beatify
+6. Need rework extension.sh
