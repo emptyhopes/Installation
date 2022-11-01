@@ -10,7 +10,4 @@
 # Beatify
 6. Need rework extension.sh
 
-
-gdm - sudo ln --symbolic /home/kali/.local/share/themes/MacOS-Themes/gnome-shell/* /usr/share/gnome-shell/theme
-
 sudo cp /home/kali/Downloads/gnome-shell-theme.gresource /usr/share/gnome-shell
