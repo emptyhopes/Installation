@@ -20,7 +20,7 @@ ClearDirectory() {
 
    # Root
 
-   cd "$RootDirectoryThemes" | ls | grep (-v) --value Default | xargs rm --recursive --force
+   cd "$RootDirectoryThemes" | ls | grep (-v) --value Default | xargs sudo rm --recursive --force
 
    sudo rm --recursive --force "$RootDirectoryExtensions" | echo "Clear $RootDirectoryExtensions: Success."
    sudo rm --recursive --force "$RootDirectoryBackgrounds" | echo "Clear $RootDirectoryBackgrounds: Success."
