@@ -1,6 +1,6 @@
 # Future
-1. Need gdm setup
-2. Need dash-to-dock install
+1. Need gdm customize login screen
+2. Need dash-to-dock install and gsettings dash-to-dock fix
 3. Need terminal customize
 
 # Bug fix
