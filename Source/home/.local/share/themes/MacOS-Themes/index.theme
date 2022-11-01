@@ -1,13 +1,13 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=MacOS-Theme
+Name=MacOS-Themes
 Comment=A MacOS BigSur like Gtk+ theme based on Elegant Design
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=MacOS-Theme
-MetacityTheme=MacOS-Theme
-IconTheme=MacOS-Theme
-CursorTheme=MacOS-Theme
+GtkTheme=MacOS-Themes
+MetacityTheme=MacOS-Themes
+IconTheme=MacOS-Themes
+CursorTheme=MacOS-Themes
 ButtonLayout=close,minimize,maximize:menu
 

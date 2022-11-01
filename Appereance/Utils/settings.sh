@@ -1,5 +1,12 @@
 #! /bin/bash
 
+if [[ "$(whoami)" == "root" ]]; then
+   echo "Dont user super user."
+   exit 1
+fi
+
+source "/home/$(whoami)/Downloads/installation/variables.sh"
+
 # System
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent "true"
@@ -24,12 +31,12 @@ echo "Settings up dash to dock: Success."
 
 # Appearance
 gsettings set org.gnome.desktop.interface icon-theme "MacOS-Icons"
-gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Theme"
-gsettings set org.gnome.shell.extensions.user-theme name "MacOS-Theme"
+gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Themes"
+gsettings set org.gnome.shell.extensions.user-theme name "MacOS-Themes"
 gsettings set org.gnome.desktop.interface cursor-theme "MacOS-Cursors"
 
-gsettings set org.gnome.desktop.background picture-uri "file:///$HOME/.local/share/backgrounds/MacOS/MacOS.xml"
-gsettings set org.gnome.desktop.screensaver picture-uri "file:///$HOME/.local/share/backgrounds/MacOS/MacOS.xml"
+gsettings set org.gnome.desktop.background picture-uri "file:///home/$user/.local/share/backgrounds/MacOS-Backgrounds/MacOS.xml"
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///home/$user/.local/share/backgrounds/MacOS-Backgrounds/MacOS.xml"
 
 gsettings set org.gnome.desktop.interface font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface document-font-name "Roboto 10"

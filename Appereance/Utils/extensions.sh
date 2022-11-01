@@ -1,6 +1,11 @@
 #! /bin/bash
 
-source "variables.sh"
+if [[ "$(whoami)" == "root" ]]; then
+   echo "Dont user super user."
+   exit 1
+fi
+
+source "/home/$(whoami)/Downloads/installation/variables.sh"
 
 DownloadExtensions() {
    BaseURL="https://extensions.gnome.org"
@@ -13,7 +18,13 @@ DownloadExtensions() {
       url=$(GetDownloadURLExtension "$extension")
 
       curl --silent --location "$url" >"$temporary/$extension.zip"
-      unzip -q "$temporary/$extension.zip" -d "$destination"
+
+      if [[ -d "$ExtensionsDirectory" ]]; then
+         unzip -q "$temporary/$extension.zip" -d "$destination"
+      else
+         mkdir "$ExtensionsDirectory"
+         unzip -q "$temporary/$extension.zip" -d "$destination"
+      fi
 
       sudo rm --recursive --force "$temporary"
 

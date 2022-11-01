@@ -1,7 +1,13 @@
 #! /bin/bash
 
-source "variables.sh"
+if [[ "$(whoami)" == "root" ]]; then
+   echo "Dont use super user."
+   exit 1
+fi
 
+source "/home/$(whoami)/Downloads/installation/variables.sh"
+
+ClearDirectory() {
 # Local
 sudo rm --recursive --force "$LocalDirectoryExtensions"
 echo "Clear $LocalDirectoryExtensions: Success."
@@ -29,9 +35,6 @@ sudo rm --recursive --force "$RootDirectoryIcons"
 echo "Clear $RootDirectoryIcons: Success."
 sudo rm --recursive --force "$RootDirectoryFonts"
 echo "Clear $RootDirectoryFonts: Success."
+}
 
-mkdir "$LocalDirectoryExtensions"
-mkdir "$LocalDirectoryCursors"
-mkdir "$LocalDirectoryThemes"
-mkdir "$LocalDirectoryIcons"
-mkdir "$LocalDirectoryFonts"
+ClearDirectory
