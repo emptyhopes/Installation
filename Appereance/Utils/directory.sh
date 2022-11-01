@@ -23,6 +23,9 @@ sudo rm --recursive --force "$LocalDirectoryFonts"
 echo "Clear $LocalDirectoryFonts: Success."
 
 # Root
+
+cd "$RootDirectoryThemes" | ls | grep (-v) --value Default | xargs rm --recursive --force
+
 sudo rm --recursive --force "$RootDirectoryExtensions"
 echo "Clear $RootDirectoryExtensions: Success."
 sudo rm --recursive --force "$RootDirectoryBackgrounds"
