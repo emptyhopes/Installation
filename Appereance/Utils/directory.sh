@@ -16,9 +16,9 @@ sudo rm --recursive --force "$LocalDirectoryIcons" | echo "Clear $LocalDirectory
 sudo rm --recursive --force "$LocalDirectoryFonts" | echo "Clear $LocalDirectoryFonts: Success."
 
 # Root
-sudo rm --recursive --force "$RootDirectoryExtensions" | echo "Clear $RootDirectoryExtensions: Success."
-sudo rm --recursive --force "$RootDirectoryBackgrounds" | echo "Clear $RootDirectoryBackgrounds: Success."
+cd "$RootDirectoryExtensions" | sudo rm * --recursive --force | echo "Clear $RootDirectoryExtensions: Success."
+cd "$RootDirectoryBackgrounds" | sudo rm * --recursive --force | echo "Clear $RootDirectoryBackgrounds: Success."
 cd "$RootDirectoryThemes" | ls | grep --invert-match Default | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryThemes: Success."
-sudo rm --recursive --force "$RootDirectoryCursors" | echo "Clear $RootDirectoryCursors: Success."
+cd "$RootDirectoryCursors" | ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryCursors: Success."
 cd "$RootDirectoryIcons" | ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryIcons: Success."
 sudo rm --recursive --force "$RootDirectoryFonts" | echo "Clear $RootDirectoryFonts: Success."
