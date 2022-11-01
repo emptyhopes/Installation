@@ -8,6 +8,7 @@ cd "$temporary"
 tar --extract --file "telegram.tar.xz"
 
 sudo mv "$temporary/Telegram" "/opt"
+
 sudo rm --recursive --force "$temporary"
 
 echo "Install telegram: Success."
