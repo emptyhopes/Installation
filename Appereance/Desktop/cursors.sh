@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "/home/$(whoami)/Downloads/installation/variables.sh"
+source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 if [[ -d "$CursorsDirectory" ]]; then
    cp --recursive "/home/$user/Downloads/installation/Source/home/.local/share/icons/MacOS-Cursors" "$CursorsDirectory"

@@ -5,12 +5,12 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "/home/$(whoami)/Downloads/installation/variables.sh"
+source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 ClearDirectory() {
 
    # Local
-   
+
    sudo rm --recursive --force "$LocalDirectoryExtensions" | echo "Clear $LocalDirectoryExtensions: Success."
    sudo rm --recursive --force "$LocalDirectoryBackgrounds" | echo "Clear $LocalDirectoryBackgrounds: Success."
    sudo rm --recursive --force "$LocalDirectoryThemes" | echo "Clear $LocalDirectoryThemes: Success."
