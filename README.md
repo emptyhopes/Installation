@@ -3,4 +3,5 @@
 2. Need terminal customize
 
 # Bug fix
+fix icon firefox
 3. Need fix filesystem bugs css
