@@ -4,7 +4,8 @@ user=$("whoami")
 
 Extensions=("user-theme@gnome-shell-extensions.gcampax.github.com" "dash-to-dock@micxgx.gmail.com" "blur-my-shell@aunetx")
 
-LocalMozillaDirectory="/home$user/.mozilla"
+InstallationDirectory="/home/$user/Downloads/installation"
+LocalMozillaDirectory="/home/$user/.mozilla"
 LocalShareDirectory="/home/$user/.local/share"
 RootShareDirectory="/usr/share"
 
