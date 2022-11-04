@@ -6,4 +6,5 @@
 # Bug fix
 4. Need fix favourites bookmarks in firefox
 
+# Pretify
 5. Delete directory Source/home and pretify all files
