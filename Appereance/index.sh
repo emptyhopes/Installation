@@ -17,5 +17,3 @@ bash "$InstallationDirectory/Appereance/Desktop/backgrounds.sh"
 bash "$InstallationDirectory/Appereance/Desktop/cursors.sh"
 bash "$InstallationDirectory/Appereance/Desktop/icons.sh"
 bash "$InstallationDirectory/Appereance/Desktop/fonts.sh"
-
-bash "$InstallationDirectory/Appereance/Utils/settings.sh"
