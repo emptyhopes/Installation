@@ -35,10 +35,10 @@ for default in "$FirefoxDirectory/"*"default"*; do
        fi
 
        echo "user_pref(\"toolkit.legacyUserProfileCustomizations.stylesheets\", true);" >> "$default/prefs.js"
-       #echo "user_pref(\"browser.tabs.drawInTitlebar\", true);" >> "$default/prefs.js"
-       #echo "user_pref(\"browser.uidensity\", 0);" >> "$default/prefs.js"
-       #echo "user_pref(\"layers.acceleration.force-enabled\", true);" >> "$default/prefs.js"
-       #echo "user_pref(\"mozilla.widget.use-argb-visuals\", true);" >> "$default/prefs.js"
+       echo "user_pref(\"browser.tabs.drawInTitlebar\", true);" >> "$default/prefs.js"
+       echo "user_pref(\"browser.uidensity\", 0);" >> "$default/prefs.js"
+       echo "user_pref(\"layers.acceleration.force-enabled\", true);" >> "$default/prefs.js"
+       echo "user_pref(\"mozilla.widget.use-argb-visuals\", true);" >> "$default/prefs.js"
 
     fi
 
