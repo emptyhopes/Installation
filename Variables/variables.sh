@@ -2,6 +2,8 @@
 
 user=$("whoami")
 
+Extensions=("user-theme@gnome-shell-extensions.gcampax.github.com" "dash-to-dock@micxgx.gmail.com" "blur-my-shell@aunetx")
+
 LocalDirectoryExtensions="/home/$user/.local/share/gnome-shell/extensions"
 LocalDirectoryBackgrounds="/home/$user/.local/share/backgrounds"
 LocalDirectoryThemes="/home/$user/.local/share/themes"
