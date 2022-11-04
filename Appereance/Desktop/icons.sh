@@ -8,8 +8,8 @@ fi
 source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 if [[ -d "$IconsDirectory" ]]; then
-   cp --recursive "/home/$user/Downloads/installation/Source/home/.local/share/icons/MacOS-Icons" "$IconsDirectory"
+   cp --recursive "$InstallationDirectory/Source/home/.local/share/icons/MacOS-Icons" "$IconsDirectory"
 else
    mkdir "$IconsDirectory"
-   cp --recursive "/home/$user/Downloads/installation/Source/home/.local/share/icons/MacOS-Icons" "$IconsDirectory"
+   cp --recursive "$InstallationDirectory/Source/home/.local/share/icons/MacOS-Icons" "$IconsDirectory"
 fi
