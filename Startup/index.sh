@@ -15,3 +15,4 @@ fi
 bash "$InstallationDirectory/Startup/remove.sh"
 bash "$InstallationDirectory/Startup/install.sh"
 
+echo "Need a logout."
