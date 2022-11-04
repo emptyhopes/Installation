@@ -8,9 +8,9 @@ fi
 source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 if [[ -d "$FirefoxDirectory" ]]; then
-    cp --recursive "/home/$user/Downloads/installation/Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
+    cp --recursive "$InstallationDirectory/Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
 else
-    echo "Open firefox and start script."
+    echo "Open firefox firstly and start script."
     exit 1
 fi
 
@@ -30,10 +30,10 @@ for default in "$FirefoxDirectory/"*"default"*; do
        fi
 
        echo "user_pref(\"toolkit.legacyUserProfileCustomizations.stylesheets\", true);" >> "$default/prefs.js"
-       echo "user_pref(\"browser.tabs.drawInTitlebar\", true);" >> "$default/prefs.js"
-       echo "user_pref(\"browser.uidensity\", 0);" >> "$default/prefs.js"
-       echo "user_pref(\"layers.acceleration.force-enabled\", true);" >> "$default/prefs.js"
-       echo "user_pref(\"mozilla.widget.use-argb-visuals\", true);" >> "$default/prefs.js"
+       #echo "user_pref(\"browser.tabs.drawInTitlebar\", true);" >> "$default/prefs.js"
+       #echo "user_pref(\"browser.uidensity\", 0);" >> "$default/prefs.js"
+       #echo "user_pref(\"layers.acceleration.force-enabled\", true);" >> "$default/prefs.js"
+       #echo "user_pref(\"mozilla.widget.use-argb-visuals\", true);" >> "$default/prefs.js"
 
     fi
 
