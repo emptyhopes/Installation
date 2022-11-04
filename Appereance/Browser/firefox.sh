@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
+source "../../Variables/variables.sh"
 
 if [[ -d "$FirefoxDirectory" ]]; then
     cp --recursive "$InstallationDirectory/Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
