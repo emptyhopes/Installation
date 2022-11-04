@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "../../Variables/variables.sh"
+source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 if [[ -d "$BackgroundsDirectory" ]]; then
    cp --recursive "$InstallationDirectory/Source/home/.local/share/backgrounds/MacOS-Backgrounds" "$BackgroundsDirectory"
