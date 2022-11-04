@@ -12,6 +12,6 @@ else
    exit 1
 fi
 
-cp --recursive "$InstallationDirectory/Source/usr/share/gnome-shell/gnome-shell-theme.gresource" "$GnomeShellDirectory/gnome-shell-theme.gresource"
+sudo cp --recursive "$InstallationDirectory/Source/usr/share/gnome-shell/gnome-shell-theme.gresource" "$GnomeShellDirectory/gnome-shell-theme.gresource"
 
 echo "GDM: Install done."
