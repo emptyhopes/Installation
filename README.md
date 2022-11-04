@@ -5,3 +5,5 @@
 
 # Bug fix
 4. Need fix favourites bookmarks in firefox
+
+5. Delete directory Source/home and pretify all files
