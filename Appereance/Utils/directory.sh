@@ -21,4 +21,3 @@ cd "$BackgroundsRootDirectory" && sudo rm * --recursive --force | echo "Clear $B
 cd "$ThemesRootDirectory" && ls | grep --invert-match Default | sudo xargs rm --recursive --force | echo "Clear $ThemesRootDirectory: Success."
 cd "$CursorsRootDirectory" && ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $CursorsRootDirectory: Success."
 cd "$IconsRootDirectory" && ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $IconsRootDirectory: Success."
-cd "$FontsRootDirectory" && sudo rm * --recursive --force | echo "Clear $FontsRootDirectory: Success."
