@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "../../Variables/variables.sh"
+source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 sudo apt-get install fonts-firacode
 
