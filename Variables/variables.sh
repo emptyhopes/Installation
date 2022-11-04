@@ -2,8 +2,6 @@
 
 user=$("whoami")
 
-BaseURL="https://extensions.gnome.org"
-GnomeVersion=$(gnome-shell --version | cut --delimiter=" " --fields="3")
 Extensions=("user-theme@gnome-shell-extensions.gcampax.github.com" "dash-to-dock@micxgx.gmail.com" "blur-my-shell@aunetx")
 
 LocalDirectoryExtensions="/home/$user/.local/share/gnome-shell/extensions"
