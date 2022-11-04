@@ -4,4 +4,3 @@
 
 # Bug fix
 3. Need fix filesystem bugs css
-4. Need fix favourites bookmarks in firefox
