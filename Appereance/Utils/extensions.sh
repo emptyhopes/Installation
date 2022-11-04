@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
+source "../../Variables/variables.sh"
 
 BaseURL="https://extensions.gnome.org"
 GnomeVersion=$(gnome-shell --version | cut --delimiter=" " --fields="3")
