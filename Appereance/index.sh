@@ -5,7 +5,12 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
+if [[ -f "/home/$(whoami)/Downloads/installation/Variables/variables.sh" ]]; then
+   source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
+else
+   echo "File variables not found."
+   exit 1
+fi
 
 bash "$InstallationDirectory/Appereance/Utils/directory.sh"
 bash "$InstallationDirectory/Appereance/Utils/extensions.sh"
@@ -17,3 +22,5 @@ bash "$InstallationDirectory/Appereance/Desktop/backgrounds.sh"
 bash "$InstallationDirectory/Appereance/Desktop/cursors.sh"
 bash "$InstallationDirectory/Appereance/Desktop/icons.sh"
 bash "$InstallationDirectory/Appereance/Desktop/fonts.sh"
+
+sudo service gdm3 restart
