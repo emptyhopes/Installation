@@ -8,7 +8,7 @@ fi
 source "../../Variables/variables.sh"
 
 if [[ -d "$FirefoxDirectory" ]]; then
-    cp --recursive "$InstallationDirectory/Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
+    cp --recursive "../../Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
 else
     echo "Open firefox firstly and start script."
     exit 1
