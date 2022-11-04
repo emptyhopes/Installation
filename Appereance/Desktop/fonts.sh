@@ -12,8 +12,6 @@ else
    exit 1
 fi
 
-sudo apt-get install fonts-firacode
-
 temporary=$(mktemp --directory)
 curl --silent --location "https://fonts.google.com/download?family=Roboto" >"$temporary/fonts.zip"
 
