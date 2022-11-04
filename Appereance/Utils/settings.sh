@@ -24,6 +24,10 @@ echo "Settings up system: Success."
 
 gsettings set org.gnome.shell disable-user-extensions false
 
+for extension in ${Extensions[@]}; do
+   gnome-extensions enable $extension
+done
+
 gsettings set org.gnome.desktop.interface icon-theme "MacOS-Icons"
 gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Themes"
 gsettings set org.gnome.shell.extensions.user-theme name "MacOS-Themes"
