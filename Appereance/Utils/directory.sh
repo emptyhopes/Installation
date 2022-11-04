@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
+source "../../Variables/variables.sh"
 
 # Local
 sudo rm --recursive --force "$LocalDirectoryExtensions" | echo "Clear $LocalDirectoryExtensions: Success."
@@ -21,3 +21,4 @@ cd "$RootDirectoryBackgrounds" && sudo rm * --recursive --force | echo "Clear $R
 cd "$RootDirectoryThemes" && ls | grep --invert-match Default | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryThemes: Success."
 cd "$RootDirectoryCursors" && ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryCursors: Success."
 cd "$RootDirectoryIcons" && ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $RootDirectoryIcons: Success."
+cd "$RootDirectoryFonts" && sudo rm * --recursive --force | echo "Clear $RootDirectoryFonts: Success."
