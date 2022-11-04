@@ -5,7 +5,7 @@ if [[ "$(whoami)" == "root" ]]; then
    exit 1
 fi
 
-source "../../Variables/variables.sh"
+source "/home/$(whoami)/Downloads/installation/Variables/variables.sh"
 
 # Local
 sudo rm --recursive --force "$LocalDirectoryExtensions" | echo "Clear $LocalDirectoryExtensions: Success."
