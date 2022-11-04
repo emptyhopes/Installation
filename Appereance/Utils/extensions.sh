@@ -20,7 +20,7 @@ GetDownloadURLExtension() {
 
 for extension in ${Extensions[@]}; do
    temporary=$(mktemp --directory)
-   destination="$LocalDirectoryExtensions/$extension"
+   destination="$ExtensionsDirectory/$extension"
    url=$(GetDownloadURLExtension "$extension")
 
    curl --silent --location "$url" >"$temporary/$extension.zip"
