@@ -23,4 +23,4 @@ bash "$InstallationDirectory/Appereance/Desktop/cursors.sh"
 bash "$InstallationDirectory/Appereance/Desktop/icons.sh"
 bash "$InstallationDirectory/Appereance/Desktop/fonts.sh"
 
-echo "Need a logout."
+echo "Need a logout and start Appereance/Utils/settings.sh"
