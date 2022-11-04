@@ -23,4 +23,4 @@ bash "$InstallationDirectory/Appereance/Desktop/cursors.sh"
 bash "$InstallationDirectory/Appereance/Desktop/icons.sh"
 bash "$InstallationDirectory/Appereance/Desktop/fonts.sh"
 
-sudo service gdm3 restart
+echo "Need a logout."
