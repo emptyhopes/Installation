@@ -43,3 +43,5 @@ for default in "$FirefoxDirectory/"*"default"*; do
     fi
 
 done
+
+echo "Firefox: Done."

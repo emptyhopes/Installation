@@ -16,6 +16,7 @@ bash "$InstallationDirectory/Appereance/Utils/directory.sh"
 bash "$InstallationDirectory/Appereance/Utils/extensions.sh"
 
 bash "$InstallationDirectory/Appereance/Browser/firefox.sh"
+bash "$InstallationDirectory/Appereance/GDM/install.sh"
 
 bash "$InstallationDirectory/Appereance/Desktop/themes.sh"
 bash "$InstallationDirectory/Appereance/Desktop/backgrounds.sh"

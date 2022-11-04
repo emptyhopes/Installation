@@ -18,3 +18,5 @@ else
    mkdir "$CursorsDirectory"
    cp --recursive "$InstallationDirectory/Source/home/.local/share/icons/MacOS-Cursors" "$CursorsDirectory"
 fi
+
+echo "Cursors: Done."

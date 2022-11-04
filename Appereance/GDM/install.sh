@@ -12,11 +12,6 @@ else
    exit 1
 fi
 
-if [[ -d "$IconsDirectory" ]]; then
-   cp --recursive "$InstallationDirectory/Source/home/.local/share/icons/MacOS-Icons" "$IconsDirectory"
-else
-   mkdir "$IconsDirectory"
-   cp --recursive "$InstallationDirectory/Source/home/.local/share/icons/MacOS-Icons" "$IconsDirectory"
-fi
+cp --recursive "$InstallationDirectory/Source/usr/share/gnome-shell/gnome-shell-theme.gresource" "$GnomeShellDirectory/gnome-shell-theme.gresource"
 
-echo "Icons: Done."
+echo "GDM: Install done."

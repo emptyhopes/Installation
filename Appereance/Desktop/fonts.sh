@@ -26,4 +26,4 @@ fi
 
 sudo rm --recursive --force "$temporary"
 
-echo "Install fonts: Success."
+echo "Fonts: Done."

@@ -22,3 +22,5 @@ else
    cp --recursive "$InstallationDirectory/Source/home/.local/share/themes/MacOS-Themes-hdpi" "$ThemesDirectory"
    cp --recursive "$InstallationDirectory/Source/home/.local/share/themes/MacOS-Themes-xhdpi" "$ThemesDirectory"
 fi
+
+echo "Themes: Done."

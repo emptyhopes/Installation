@@ -18,3 +18,5 @@ else
    mkdir "$BackgroundsDirectory"
    cp --recursive "$InstallationDirectory/Source/home/.local/share/backgrounds/MacOS-Backgrounds" "$BackgroundsDirectory"
 fi
+
+echo "Backgrounds: Done."
