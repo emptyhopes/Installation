@@ -22,7 +22,3 @@ sudo rm --recursive --force "$FontsLocalDirectory" | echo "Clear $FontsLocalDire
 
 # Root
 cd "$ExtensionsRootDirectory" && sudo rm * --recursive --force | echo "Clear $ExtensionsRootDirectory: Success."
-cd "$BackgroundsRootDirectory" && sudo rm * --recursive --force | echo "Clear $BackgroundsRootDirectory: Success."
-cd "$ThemesRootDirectory" && ls | grep --invert-match Default | sudo xargs rm --recursive --force | echo "Clear $ThemesRootDirectory: Success."
-cd "$CursorsRootDirectory" && ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $CursorsRootDirectory: Success."
-cd "$IconsRootDirectory" && ls | grep --invert-match Adwaita | sudo xargs rm --recursive --force | echo "Clear $IconsRootDirectory: Success."
