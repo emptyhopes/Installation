@@ -1,4 +1,4 @@
-#!  /bin/bash
+#! /bin/bash
 
 if [[ "$(whoami)" == "root" ]]; then
    echo "Dont use super user."
