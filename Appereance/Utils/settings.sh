@@ -50,24 +50,24 @@ echo "Settings up appearance: Success."
 
 # Terminal
 
-#gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ default-size-columns 120
+profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
+profile=${profile:1:-1}
 
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-columns 120
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-rows 30
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-transparency-percent 30
-#gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors false
-#gsettings get org.gnome.Terminal.Legacy.Profile:/:0/ font
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-columns 110
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" default-size-rows 30
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-transparency-percent 30
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors false
 
-#echo "Settings up terminal: Success."
+echo "Settings up terminal: Success."
 
 # Dash to dock
 
-#gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts "false"
-#gsettings set org.gnome.shell.extensions.dash-to-dock show-trash "false"
-#gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed "true"
-#gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity "0.30"
-#gsettings set org.gnome.shell.extensions.dash-to-dock intellihide "false"
-#gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
-#gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "40"
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts "false"
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash "false"
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed "true"
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity "0.30"
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide "false"
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "40"
 
-#echo "Settings up dash to dock: Success."
+echo "Settings up dash to dock: Success."
