@@ -13,10 +13,10 @@ else
 fi
 
 if [[ -d "$AvatarsDiretory" ]]; then
-   cp --recursive "$InstallationDirectory/Source/home/.local/share/avatars/Avatars.jpg" "$AvatarsDiretory"
+   sudo cp --recursive "$InstallationDirectory/Source/home/.local/share/avatars/Avatar.jpg" "$AvatarsDiretory"
 else
    mkdir "$AvatarsDiretory"
-   cp --recursive "$InstallationDirectory/Source/home/.local/share/avatars/Avatars.jpg" "$AvatarsDiretory"
+   sudo cp --recursive "$InstallationDirectory/Source/home/.local/share/avatars/Avatar.jpg" "$AvatarsDiretory"
 fi
 
 echo "Avatars: Done."
