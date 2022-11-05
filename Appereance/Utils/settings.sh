@@ -66,7 +66,8 @@ gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/prof
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" audible-bell "true"
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" foreground-color "#ffffff"
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color "#171421"
-gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" palette "[\"rgb(0,0,0)\", \"rgb(205,0,0)\", \"rgb(0,205,0)\", \"rgb(205,205,0)\", \"rgb(0,0,205)\", \"rgb(205,0,205)\", \"rgb(0,205,205)\", \"rgb(250,235,215)\", \"rgb(64,64,64)\", \"rgb(255,0,0)\", \"rgb(0,255,0)\", \"rgb(255,255,0)\", \"rgb(0,0,255)\", \"rgb(255,0,255)\", \"rgb(0,255,255)\", \"rgb(255,255,255)\"]"
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" palette "['#171421', '#c01c28', '#26a269', '#a2734c', '#12488b', '#a347ba', '#2aa1b3', '#d0cfcc', '#5e5c64', '#f66151', '#33da7a', '#e9ad0c', '#2a7bde', '#c061cb', '#33c7de', '#ffffff']"
+
 
 echo "Settings up terminal: Success."
 
