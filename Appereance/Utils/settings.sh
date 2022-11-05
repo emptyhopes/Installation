@@ -64,8 +64,8 @@ gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/prof
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" scrollbar-policy "never"
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" scrollback-unlimited "true"
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" audible-bell "true"
-gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" foreground-color "rgb(0,0,0)"
-gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color "rgb(255,255,221)"
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" foreground-color "#ffffff"
+gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color "#171421"
 gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" palette "[\"rgb(0,0,0)\", \"rgb(205,0,0)\", \"rgb(0,205,0)\", \"rgb(205,205,0)\", \"rgb(0,0,205)\", \"rgb(205,0,205)\", \"rgb(0,205,205)\", \"rgb(250,235,215)\", \"rgb(64,64,64)\", \"rgb(255,0,0)\", \"rgb(0,255,0)\", \"rgb(255,255,0)\", \"rgb(0,0,255)\", \"rgb(255,0,255)\", \"rgb(0,255,255)\", \"rgb(255,255,255)\"]"
 
 echo "Settings up terminal: Success."
