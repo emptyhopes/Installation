@@ -46,6 +46,8 @@ gsettings set org.gnome.desktop.interface document-font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface monospace-font-name "Fira Code Medium 10"
 gsettings set org.gnome.desktop.wm.preferences titlebar-font "Roboto Medium 10"
 
+sudo cp "$AvatarsDirectory/Avatar.jpg" "/home/$user/.face"
+
 echo "Settings up appearance: Success."
 
 # Terminal
