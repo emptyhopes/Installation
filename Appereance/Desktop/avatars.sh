@@ -12,10 +12,10 @@ else
    exit 1
 fi
 
-if [[ -d "$AvatarsDiretory" ]]; then
+if [[ -d "$AvatarsDirectory" ]]; then
    sudo cp --recursive "$InstallationDirectory/Source/home/.local/share/avatars/Avatar.jpg" "$AvatarsDirectory"
 else
-   mkdir "$AvatarsDiretory"
+   mkdir "$AvatarsDirectory"
    sudo cp --recursive "$InstallationDirectory/Source/home/.local/share/avatars/Avatar.jpg" "$AvatarsDirectory"
 fi
 
