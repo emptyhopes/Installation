@@ -86,5 +86,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys "false"
 gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode "FIXED"
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-monitors "true"
+gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme "false"
 
 echo "Settings up dash to dock: Success."
