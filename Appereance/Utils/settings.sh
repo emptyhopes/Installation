@@ -78,6 +78,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity "0.30"
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide "false"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action "minimize"
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "40"
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size "44"
 
 echo "Settings up dash to dock: Success."
