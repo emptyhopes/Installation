@@ -7,21 +7,20 @@
 
 
 
-gdm3
-  Depends: gnome-control-center
-  Depends: gnome-menus
-  Depends: gnome-session
-  Depends: gnome-shell
-  Depends: gnome-shell-extensions
-  Depends: gnome-shell-extension-appindicator
-  Depends: gnome-shell-extension-dashtodock
-  Depends: gnome-shell-extension-desktop-icons-ng
-  Depends: gnome-tweaks
-    Depends: nautilus
-  Depends: network-manager-gnome
-   Depends: gnome-text-editor
-  Depends: gnome-calculator
-Depends: gnome-system-monitor
-gnome-disk-utility
-gnome-terminal
-kali-desktop-core
+-gdm3
+-gnome-control-center
+-gnome-menus
+-gnome-session
+-gnome-shell
+-gnome-shell-extensions
+-gnome-shell-extension-dashtodock
+-gnome-shell-extension-desktop-icons-ng
+-gnome-tweaks
+-nautilus
+-network-manager-gnome
+-gnome-text-editor
+-gnome-calculator
+-gnome-system-monitor
+-gnome-disk-utility
+-gnome-terminal
+-kali-desktop-core
