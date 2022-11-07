@@ -9,6 +9,6 @@ sudo mkdir -p /mnt/persistence
 sudo mount /dev/mapper/persistence /mnt/persistence
 sudo echo "/ union" > /mnt/persistence/persistence.conf
 sudo mkdir /mnt/persistence/system
-sudo unmount /dev/mapper/persistence
+sudo umount /dev/mapper/persistence
 
 sudo cryptsetup luksClose /dev/mapper/persistence
