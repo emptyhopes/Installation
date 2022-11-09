@@ -14,6 +14,7 @@ fi
 
 # System
 
+gsettings set org.gnome.desktop.interface color-scheme "default"
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent "true"
 gsettings set org.gnome.desktop.interface clock-show-date "true"
