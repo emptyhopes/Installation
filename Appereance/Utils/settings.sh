@@ -14,7 +14,6 @@ fi
 
 # System
 
-gsettings set org.gnome.desktop.interface color-scheme "default"
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,maximize,close"
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent "true"
 gsettings set org.gnome.desktop.interface clock-show-date "true"
@@ -38,8 +37,8 @@ gsettings set org.gnome.desktop.interface gtk-theme "MacOS-Themes"
 gsettings set org.gnome.shell.extensions.user-theme name "MacOS-Themes"
 gsettings set org.gnome.desktop.interface cursor-theme "MacOS-Cursors"
 
-gsettings set org.gnome.desktop.background picture-uri "file:///$BackgroundsDirectory/MacOS-Backgrounds/MacOS.xml"
-gsettings set org.gnome.desktop.screensaver picture-uri "file:///$BackgroundsDirectory/MacOS-Backgrounds/MacOS.xml"
+gsettings set org.gnome.desktop.background picture-uri "file:///$BackgroundsDirectory/MacOS-Backgrounds/MacOS.png"
+gsettings set org.gnome.desktop.screensaver picture-uri "file:///$BackgroundsDirectory/MacOS-Backgrounds/MacOS.png"
 
 gsettings set org.gnome.desktop.interface font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface document-font-name "Roboto 10"
@@ -85,7 +84,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock workspace-agnostic-urgent-windows "false"
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts-only-mounted "false"
 gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys "false"
-gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup "true"
+#gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode "FIXED"
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-monitors "true"
 gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme "false"
