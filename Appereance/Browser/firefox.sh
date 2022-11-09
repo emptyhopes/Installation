@@ -15,8 +15,8 @@ fi
 if [[ -d "$FirefoxDirectory" ]]; then
     cp --recursive "$InstallationDirectory/Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
 else
-    echo "Open firefox firstly and start script."
-    exit 1
+    mkdir --parents "$FirefoxDirectory"
+    cp --recursive "$InstallationDirectory/Source/home/.mozilla/firefox/firefox-theme" "$FirefoxDirectory/firefox-theme"
 fi
 
 for default in "$FirefoxDirectory/"*"default"*; do
