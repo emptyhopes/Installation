@@ -22,6 +22,7 @@ gsettings set org.gnome.desktop.interface clock-show-seconds "true"
 gsettings set org.gnome.desktop.interface clock-show-weekday "true"
 gsettings set org.gnome.desktop.interface show-battery-percentage "true"
 gsettings set org.gnome.mutter center-new-windows "true"
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click "true"
 
 echo "Settings up system: Success."
 
