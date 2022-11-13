@@ -13,10 +13,10 @@ else
 fi
 
 if [[ -d "$ETCDefaultDirectory" ]]; then
-   cp --recursive "$InstallationDirectory/Source/$ETCDefaultDirectory/grub" "$ETCDefaultDirectory/grub"
+   sudo cp --recursive "$InstallationDirectory/Source/$ETCDefaultDirectory/grub" "$ETCDefaultDirectory/grub"
 else
    mkdir "$ETCDefaultDirectory"
-   cp --recursive "$InstallationDirectory/Source/$ETCDefaultDirectory/grub" "$ETCDefaultDirectory/grub"
+   sudo cp --recursive "$InstallationDirectory/Source/$ETCDefaultDirectory/grub" "$ETCDefaultDirectory/grub"
 fi
 
 echo "Fix sound: Done."
