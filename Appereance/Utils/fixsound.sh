@@ -14,9 +14,11 @@ fi
 
 if [[ -d "$ETCDefaultDirectory" ]]; then
    sudo cp --recursive "$InstallationDirectory/Source/$ETCDefaultDirectory/grub" "$ETCDefaultDirectory/grub"
+   sudo grub-mkconfig -o /boot/grub/grub.cfg
 else
    mkdir "$ETCDefaultDirectory"
    sudo cp --recursive "$InstallationDirectory/Source/$ETCDefaultDirectory/grub" "$ETCDefaultDirectory/grub"
+   sudo grub-mkconfig -o /boot/grub/grub.cfg
 fi
 
 echo "Fix sound: Done."
