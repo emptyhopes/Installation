@@ -8,6 +8,7 @@ InstallationDirectory="/home/$user/Downloads/installation"
 LocalMozillaDirectory="/home/$user/.mozilla"
 LocalShareDirectory="/home/$user/.local/share"
 RootShareDirectory="/usr/share"
+ETCDefaultDirectory="/etc/default"
 
 ExtensionsLocalDirectory="$LocalShareDirectory/gnome-shell/extensions"
 BackgroundsLocalDirectory="$LocalShareDirectory/backgrounds"
