@@ -6,4 +6,6 @@ curl --silent --location "https://az764295.vo.msecnd.net/stable/d045a5eda657f4d7
 
 sudo apt install "$temporary/visualstudiocode.deb" --yes
 
+sudo rm --recursive --force "$temporary"
+
 echo "Install visual studio code: Success."
