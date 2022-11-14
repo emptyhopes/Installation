@@ -11,6 +11,6 @@ sudo mv "$temporary/Telegram" "/opt"
 
 sudo rm --recursive --force "$temporary"
 
-echo "Install telegram: Success."
-
 /opt/Telegram/Telegram
+
+echo "Install telegram: Success."
