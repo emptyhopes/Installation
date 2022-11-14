@@ -7,3 +7,7 @@ curl --silent --location "https://repo.protonvpn.com/debian/dists/stable/main/bi
 sudo apt install "$temporary/protonvpn.deb" --yes
 sudo apt-get update
 sudo apt-get install protonvpn --yes
+
+sudo rm --recursive --force "$temporary"
+
+echo "Install proton vpn: Success."
