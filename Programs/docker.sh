@@ -1,6 +1,6 @@
 #! /bin/bash
 
-sudo apt-get install docker.io --yes
+sudo apt-get install docker.io docker-compose --yes
 
 sudo systemctl enable docker --now
 
